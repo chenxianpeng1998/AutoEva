@@ -31,6 +31,8 @@ function f() {
         interval3 = setInterval("e();", 100);
     }
     else if (document.getElementsByClassName('el-select-dropdown__item')[10]) {
+        document.getElementsByClassName('el-select-dropdown__item')[1].click();
+        document.getElementsByClassName('el-button')[0].click();
         clearInterval(interval1);
         document.getElementsByClassName('el-select-dropdown__item')[10].click();
         interval2 = setInterval("g();", 100);
